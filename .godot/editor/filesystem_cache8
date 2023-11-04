@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1699134083
+export_presets.cfg::TextFile::-1::1699051107::0::1::::<><>::
+icon.svg::CompressedTexture2D::2078319417995745022::1699044701::1699044704::1::::<><>::
+main.gd::GDScript::-1::1699050835::0::1::::<>Control<>::
+main.tscn::PackedScene::4602984801363966439::1699050967::0::1::::<><>::res://main.gd
+::res://addons/::1699044747
+::res://addons/script-tabs/::1699044747
+plugin.cfg::TextFile::-1::1699044747::0::1::::<><>::
+plugin.gd::GDScript::-1::1699044747::0::1::::<>EditorPlugin<>::
+::res://models/::1699052196
