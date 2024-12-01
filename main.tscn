@@ -47,7 +47,6 @@ value = 1.0
 
 [node name="DieOption" type="OptionButton" parent="MarginContainer/Panel/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-selected = 0
 allow_reselect = true
 
 [node name="BtnRoll" type="Button" parent="MarginContainer/Panel/VBoxContainer/HBoxContainer"]

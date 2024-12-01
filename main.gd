@@ -9,7 +9,7 @@ enum Dice { D4=4, D6=6, D8=8, D10=10, D12=12, D20=20, D100=100 }
 
 var ResultString : String = "{i}:{r}"
 var RollString : String = "Rolled {C}D{F} = {S} | Results: {R}"
-var LastRoll : Dictionary = { "Count"=0, "Die"=Dice.D4, "Results"=_lastResults, "Total"=0 }
+@export var LastRoll : Dictionary = { "Count"=0, "Die"=Dice.D4, "Results"=_lastResults, "Total"=0 }
 
 var _count : int = 1
 var _face := Dice.D4
@@ -52,6 +52,7 @@ func _on_btn_roll_pressed():
 	thisRoll["Total"]=_total
 	ResultList.add_item(RollString.format({"C":_count, "F":_face, "S":_total, "R":resultArray}))
 	_vscroll.set_value_no_signal(_vscroll.max_value)
+	LastRoll = { "Count":_count, "Die":_face, "Result":_total}
 	print_debug(thisRoll)
 
 func _on_die_option_item_selected(index):
