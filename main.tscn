@@ -21,6 +21,10 @@ custom_minimum_size = Vector2(400, 250)
 layout_mode = 1
 offset_right = 40.0
 offset_bottom = 40.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
 
 [node name="Panel" type="Panel" parent="MarginContainer"]
 layout_mode = 2
