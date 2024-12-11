@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b6tyqtf5d3erf"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_3amul"]
+[ext_resource type="Script" path="res://dice_roller.gd" id="1_3amul"]
 
 [node name="Main" type="Control" node_paths=PackedStringArray("CountSpin", "DieList", "ResultList")]
 layout_mode = 3
