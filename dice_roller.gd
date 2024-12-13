@@ -15,6 +15,8 @@ var _count : int = 1
 var _face := Dice.D4
 var _lastResults : Array[int] = []
 var _total : int = 0
+var AboutText : String = 'License: CC-BY-4.0
+src: github.com/gsizer/DiceRoller'
 
 func _ready():
 	_lastResults.clear()
@@ -69,3 +71,16 @@ func _on_die_option_item_selected(index):
 func _on_result_list_item_selected(index):
 	var rstring : String = ResultList.get_item_text(index)
 	DisplayServer.clipboard_set(rstring)
+
+func _input(event):
+	# listen for F12 then show about dialog
+	if event.is_action("About"):
+		var about := AcceptDialog.new()
+		about.dialog_autowrap = true
+		about.get_label().autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		about.dialog_close_on_escape = true
+		about.title = "Information"
+		about.dialog_text = AboutText
+		get_tree().root.add_child(about)
+		about.popup_centered( Vector2i(300,50) )
+		about.visible = true
